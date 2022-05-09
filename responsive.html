@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .units {
+            background-color: aqua;
+            /* vw and vh is use for risponsiveness */
+            /* vw is called ..% for its vw=viewport width */
+            width: 50vw;
+            /* vh is called ..% for its vh=viewport height */
+            height: 50vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+
+        .box1 {
+            height: 234px;
+            width: 300px;
+            background-color: blue;
+            border: 2px solid black;
+        }
+
+        .box2 {
+            height: 234px;
+            width: 300px;
+            background-color: red;
+            border: 2px solid black;
+        }
+
+        .aj {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .div {
+            background-color: red;
+            width: 100%;
+            height: 1100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="units">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti placeat officia aut?</p>
+    </div>
+    <div class="container">
+        <div class="box1">AKSHAT</div>
+        <div class="box2">AKSHAT</div>
+        <div class="box2">AKSHAT</div>
+        <div class="box2">AKSHAT</div>
+    </div><br><br>
+    <div class="div">a.k.j</div>
+    <div class="aj">a.j.</div>
+</body>
+
+</html>
